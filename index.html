@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -27,10 +27,10 @@
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="packages.html#packages">Packages</a></li>
+        <li><a href="reviews.html#reviews">Reviews</a></li>
+        <li><a href="contact.html#contact">Contact</a></li>
         <li>
           <a href="#"
              class="btn-nav"
@@ -93,6 +93,30 @@
     </div>
   </section>
 
+  <!-- ══════════════════ STATS ══════════════════ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in" data-delay="1">
+          <div class="stat-number" data-target="500" data-suffix="+">0+</div>
+          <div class="stat-label">Happy Orders</div>
+        </div>
+        <div class="stat-item fade-in" data-delay="2">
+          <div class="stat-number" data-target="4" data-suffix="">0</div>
+          <div class="stat-label">Years of Craft</div>
+        </div>
+        <div class="stat-item fade-in" data-delay="3">
+          <div class="stat-number" data-target="20" data-suffix="+">0+</div>
+          <div class="stat-label">Unique Flavors</div>
+        </div>
+        <div class="stat-item fade-in" data-delay="4">
+          <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+          <div class="stat-label">Handcrafted</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ══════════════════ PACKAGES ══════════════════ -->
   <section class="packages-section" id="packages">
     <div class="container">
@@ -104,43 +128,43 @@
 
         <article class="package-card fade-in" data-delay="1">
           <div class="card-image">
-            <img src="images/tart1.png" alt="Tart Box" loading="lazy" />
+            <img src="images/tart%20mshakel.jpg" alt="Tart Box" loading="lazy" />
             <span class="card-badge">Popular</span>
           </div>
           <div class="card-body">
             <h3>Tart Box</h3>
             <p>Elegant, buttery tarts with beautiful toppings — crafted fresh and presented in a gorgeous gift box.</p>
             <div class="card-footer-row">
-              <span class="card-price">From $49</span>
-              <a href="birthday.html" class="btn btn-outline">Discover More</a>
+              <span class="card-price">800₺</span>
+              <a href="tarts.html#flavors" class="btn btn-outline">Discover More</a>
             </div>
           </div>
         </article>
 
         <article class="package-card fade-in" data-delay="2">
           <div class="card-image">
-            <img src="images/cup1.png" alt="Cupcake Set" loading="lazy" />
+            <img src="images/cup3.jpg" alt="Cupcake Set" loading="lazy" />
           </div>
           <div class="card-body">
             <h3>Cupcake Set</h3>
             <p>A beautiful assortment of fluffy, frosted cupcakes — perfect for parties, gifts, or a sweet treat.</p>
             <div class="card-footer-row">
-              <span class="card-price">From $35</span>
-              <a href="cupcakes.html" class="btn btn-outline">Discover More</a>
+              <span class="card-price">300₺</span>
+              <a href="cupcakes.html#flavors" class="btn btn-outline">Discover More</a>
             </div>
           </div>
         </article>
 
         <article class="package-card fade-in" data-delay="3">
           <div class="card-image">
-            <img src="images/biscuit1.png" alt="Biscuit Box" loading="lazy" />
+            <img src="images/biscuit%201.jpg" alt="Biscuit Box" loading="lazy" />
           </div>
           <div class="card-body">
             <h3>Biscuit Box</h3>
             <p>A charming gift box filled with our signature handcrafted biscuits in various flavors and designs.</p>
             <div class="card-footer-row">
-              <span class="card-price">From $28</span>
-              <a href="cookies.html" class="btn btn-outline">Discover More</a>
+              <span class="card-price">800₺</span>
+              <a href="biscuits.html#flavors" class="btn btn-outline">Discover More</a>
             </div>
           </div>
         </article>
@@ -148,7 +172,7 @@
       </div>
 
       <div class="reviews-cta fade-in" style="margin-top: 52px;">
-        <a href="packages.html" class="btn btn-gold">✦ Discover More Packages</a>
+        <a href="packages.html#packages" class="btn btn-gold">✦ Discover More Packages</a>
       </div>
     </div>
   </section>
@@ -162,46 +186,103 @@
 
       <div class="gallery-grid">
         <div class="gallery-item fade-in" data-delay="1">
-          <img src="images/cup1.png" alt="Cupcake creation" loading="lazy" />
-          <div class="gallery-overlay"><span>Cupcakes</span></div>
-        </div>
-        <div class="gallery-item fade-in" data-delay="2">
-          <img src="images/tart1.png" alt="Tart creation" loading="lazy" />
+          <img src="images/tart%20mshakel.jpg" alt="Tart creation" loading="lazy" />
           <div class="gallery-overlay"><span>Tarts</span></div>
         </div>
-        <div class="gallery-item fade-in" data-delay="3">
-          <img src="images/biscuit1.png" alt="Cookie creation" loading="lazy" />
-          <div class="gallery-overlay"><span>Cookies</span></div>
-        </div>
-        <div class="gallery-item fade-in" data-delay="1">
+        <div class="gallery-item fade-in" data-delay="2">
           <img src="images/cup2.png" alt="Cupcake creation" loading="lazy" />
           <div class="gallery-overlay"><span>Cupcakes</span></div>
         </div>
-        <div class="gallery-item fade-in" data-delay="2">
-          <img src="images/tart2.png" alt="Tart creation" loading="lazy" />
-          <div class="gallery-overlay"><span>Tarts</span></div>
-        </div>
         <div class="gallery-item fade-in" data-delay="3">
-          <img src="images/biscuit2.png" alt="Cookie creation" loading="lazy" />
-          <div class="gallery-overlay"><span>Cookies</span></div>
+          <img src="images/biscuit%201.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
         </div>
         <div class="gallery-item fade-in" data-delay="1">
-          <img src="images/cup3.png" alt="Cupcake creation" loading="lazy" />
-          <div class="gallery-overlay"><span>Cupcakes</span></div>
+          <img src="images/tart%201.jpg" alt="Tart creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Tarts</span></div>
         </div>
         <div class="gallery-item fade-in" data-delay="2">
-          <img src="images/biscuit3.png" alt="Cookie creation" loading="lazy" />
-          <div class="gallery-overlay"><span>Cookies</span></div>
+          <img src="images/cup3.jpg" alt="Cupcake creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Cupcakes</span></div>
         </div>
         <div class="gallery-item fade-in" data-delay="3">
-          <img src="images/cup4.png" alt="Cupcake creation" loading="lazy" />
+          <img src="images/biscuit%203.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+
+        <div class="gallery-item gallery-extra">
+          <img src="images/tart%202.jpg" alt="Tart creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Tarts</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/cup1.jpg" alt="Cupcake creation" loading="lazy" />
           <div class="gallery-overlay"><span>Cupcakes</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%202.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/tart%203.jpg" alt="Tart creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Tarts</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/cup4.jpg" alt="Cupcake creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Cupcakes</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%204.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/tart%204.jpg" alt="Tart creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Tarts</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%205.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/tart%205.jpg" alt="Tart creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Tarts</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%206.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%207.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%208.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%209.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%2010.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%2011.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="images/biscuit%2012.jpg" alt="Biscuit creation" loading="lazy" />
+          <div class="gallery-overlay"><span>Biscuits</span></div>
         </div>
       </div>
 
-      <div class="reviews-cta fade-in" style="margin-top:48px;">
+      <div class="reviews-cta fade-in" style="margin-top:36px;" id="galleryMoreWrap">
+        <button class="btn btn-gold" id="galleryMoreBtn">✦ See More</button>
+      </div>
+      <div class="reviews-cta fade-in" style="margin-top:20px;">
         <a href="#"
-           class="btn btn-gold"
+           class="btn btn-outline"
+           style="color:var(--white); border-color:rgba(255,255,255,0.4);"
            data-wa-message="Hello! 🍰 I saw your gallery and would love to order. Can you help me?">
           💬 Order Something Like This
         </a>

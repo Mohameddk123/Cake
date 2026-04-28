@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    House of Sweets – Main Stylesheet
    ============================================================ */
 
@@ -86,7 +86,7 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
 .btn-secondary { background:transparent; color:var(--white); border:2px solid var(--white); }
 .btn-secondary:hover { background:var(--white); color:var(--accent); transform:translateY(-3px); }
 .btn-gold { background:var(--gold); color:var(--white); box-shadow:0 6px 20px rgba(212,175,55,0.35); }
-.btn-gold:hover { background:#b8952d; transform:translateY(-3px); box-shadow:0 10px 30px rgba(212,175,55,0.45); }
+.btn-gold:hover { background:#c8a96e; transform:translateY(-3px); box-shadow:0 10px 30px rgba(212,175,55,0.45); }
 .btn-outline { background:transparent; color:var(--accent); border:2px solid var(--accent); }
 .btn-outline:hover { background:var(--accent); color:var(--white); transform:translateY(-3px); box-shadow:var(--shadow-md); }
 
@@ -96,14 +96,31 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
   top: 0; left: 0; right: 0;
   width: 100%;
   z-index: 1000;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  transition: background 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+.navbar.scrolled {
   background: rgba(255,245,225,0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(248,200,220,0.4);
-  box-shadow: 0 2px 20px rgba(75,46,46,0.06);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 24px rgba(75,46,46,0.12);
 }
-.navbar.scrolled { box-shadow: 0 4px 24px rgba(75,46,46,0.12); }
+/* Transparent navbar — logo white on all screens, links white on desktop only */
+.navbar:not(.scrolled) .nav-logo { color: var(--white); }
+.navbar:not(.scrolled) .nav-logo .logo-accent { color: var(--gold); }
+@media (min-width: 769px) {
+  .navbar:not(.scrolled) .nav-links a:not(.btn-nav) { color: rgba(255,255,255,0.9); }
+  .navbar:not(.scrolled) .nav-links a:not(.btn-nav):hover { color: var(--white); }
+}
+/* Hamburger bars white on transparent navbar (mobile + desktop) */
+.navbar:not(.scrolled) .hamburger:not(.is-open) .bar { background: var(--white); }
+/* When menu is open on mobile, bars over light panel must be dark */
+.navbar .hamburger.is-open .bar { background: var(--accent); }
 
 .nav-container {
   max-width: 1200px;
@@ -124,6 +141,7 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: color 0.4s ease;
 }
 .nav-logo .logo-accent { color: var(--gold); }
 .logo-img {
@@ -146,7 +164,7 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
   font-weight: 500;
   color: var(--text-medium);
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
 }
 .nav-links a::after {
   content: '';
@@ -193,7 +211,7 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
   width: 24px; height: 2px;
   background: var(--accent);
   border-radius: 2px;
-  transition: transform 0.35s ease, opacity 0.35s ease, width 0.35s ease;
+  transition: background 0.4s ease, transform 0.35s ease, opacity 0.35s ease, width 0.35s ease;
   transform-origin: center;
 }
 .hamburger.is-open .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -368,7 +386,7 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
 @keyframes bounceDown { 0%,100% { transform:translateX(-50%) translateY(0); } 50% { transform:translateX(-50%) translateY(8px); } }
 
 /* ── Sections ── */
-section { padding: 100px 24px; }
+section { padding: 100px 24px; scroll-margin-top: 80px; }
 .container { max-width: 1200px; margin: 0 auto; }
 
 /* ── About ── */
@@ -602,8 +620,9 @@ section { padding: 100px 24px; }
 .package-detail-image img {
   width:100%;
   height:480px;
-  object-fit: contain;
-  padding: 24px;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
   transition:transform 0.5s ease;
 }
 .package-detail-image:hover img { transform: scale(1.04); }
@@ -684,6 +703,7 @@ section { padding: 100px 24px; }
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
+.gallery-extra { display: none; }
 .gallery-item {
   position: relative;
   border-radius: var(--radius-sm);
@@ -800,7 +820,7 @@ section { padding: 100px 24px; }
   .gallery-grid { grid-template-columns: repeat(3,1fr); gap:12px; }
 }
 @media (max-width: 768px) {
-  section { padding: 70px 20px; }
+  section { padding: 70px 20px; scroll-margin-top: 80px; }
   .reviews-grid { grid-template-columns: 1fr; max-width:440px; margin-left:auto; margin-right:auto; }
   .about-grid { grid-template-columns: 1fr; max-width:360px; margin-left:auto; margin-right:auto; }
   .gallery-grid { grid-template-columns: repeat(2,1fr); gap:10px; }
@@ -818,4 +838,37 @@ section { padding: 100px 24px; }
   .nav-container { padding: 0 16px; }
   .hero-title { font-size: 2.6rem; }
   .order-form-container { padding: 28px 16px; }
+}
+
+/* ── Stats Counter ── */
+.stats-section {
+  background: var(--accent);
+  padding: 64px 24px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.stat-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.stat-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
 }

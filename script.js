@@ -56,9 +56,9 @@ document.addEventListener('keydown', e => {
 
 // Navbar scroll shadow
 if (navbar) {
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
-  }, { passive: true });
+  const syncNavbar = () => navbar.classList.toggle('scrolled', window.scrollY > 20);
+  syncNavbar();
+  window.addEventListener('scroll', syncNavbar, { passive: true });
 }
 
 // ── HERO ZOOM ────────────────────────────────────────────────
@@ -135,6 +135,43 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     }
   });
 });
+
+// ── GALLERY "See More" ───────────────────────────────────────
+const galleryMoreBtn = document.getElementById('galleryMoreBtn');
+if (galleryMoreBtn) {
+  galleryMoreBtn.addEventListener('click', function () {
+    document.querySelectorAll('.gallery-extra').forEach(el => {
+      el.classList.remove('gallery-extra');
+      el.classList.add('visible');
+    });
+    document.getElementById('galleryMoreWrap').style.display = 'none';
+  });
+}
+
+// ── COUNTER ANIMATION ────────────────────────────────────────
+const counterEls = document.querySelectorAll('.stat-number');
+if (counterEls.length > 0) {
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const suffix = el.dataset.suffix || '';
+      const duration = 1600;
+      const step = 16;
+      const increment = target / (duration / step);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current) + suffix;
+      }, step);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  counterEls.forEach(el => counterObserver.observe(el));
+}
+
 
 // ── WHATSAPP – Order Form ────────────────────────────────────
 const orderForm = document.getElementById('orderForm');

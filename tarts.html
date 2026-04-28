@@ -3,186 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Packages – House of Sweets</title>
-  <meta name="description" content="Explore all dessert packages at House of Sweets — tarts, cupcakes, biscuits, birthday sets and more." />
+  <title>Tart Box – House of Sweets</title>
+  <meta name="description" content="Choose your perfect tart — Fresh Fruit, Chocolate Ganache, Lemon Cream or Mixed Berry. Handcrafted with love." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .packages-page-hero {
+    .tarts-hero {
       background:
-        radial-gradient(ellipse at 20% 50%, rgba(248,200,220,0.28) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(212,175,55,0.18) 0%, transparent 42%),
-        linear-gradient(145deg, #1a0808 0%, #3d1a0a 30%, #5c3317 60%, #4B2E2E 100%);
+        radial-gradient(ellipse at 30% 50%, rgba(248,200,220,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 75% 25%, rgba(212,175,55,0.2) 0%, transparent 45%),
+        linear-gradient(145deg, #1a0808 0%, #4B2E2E 50%, #3a1a2a 100%);
       padding: 140px 24px 80px;
       text-align: center;
     }
-    .packages-page-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      color: var(--white);
-      margin-bottom: 16px;
-    }
-    .packages-page-hero p {
-      color: rgba(255,255,255,0.75);
-      font-size: 1.05rem;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .packages-page-hero .hero-tag {
-      opacity: 1;
-      animation: none;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-    /* Badge colors for new packages */
-    .card-badge.birthday  { background: #e05c8a; }
-    .card-badge.joy       { background: #D4AF37; color: #2c1a1a; }
-    .card-badge.guests    { background: #7a5c3a; }
+    .tarts-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,5vw,3.5rem); color:var(--white); margin-bottom:16px; }
+    .tarts-hero p { color:rgba(255,255,255,0.75); font-size:1.05rem; max-width:500px; margin:0 auto; }
+    .tarts-hero .hero-tag { opacity:1; animation:none; display:inline-block; margin-bottom:20px; }
+    .card-badge.fruit     { background: #e05c8a; }
+    .card-badge.choc-tart { background: #5c3317; }
+    .card-badge.lemon     { background: #D4AF37; color: #2c1a1a; }
+    .card-badge.berry     { background: #6b3a6b; }
+    .card-badge.caramel   { background: #b07030; }
   </style>
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">House of <span class="logo-accent">Sweets</span></a>
       <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html#home">Home</a></li>
         <li><a href="packages.html#packages">Packages</a></li>
         <li><a href="reviews.html#reviews">Reviews</a></li>
         <li><a href="contact.html#contact">Contact</a></li>
-        <li>
-          <a href="#" class="btn-nav"
-             data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?">
-            Order Now
-          </a>
-        </li>
+        <li><a href="#" class="btn-nav" data-wa-message="Hello! 🍰 I'd like to order a Tart Box from House of Sweets. Can you help me?">Order Now</a></li>
       </ul>
     </div>
   </nav>
   <div class="nav-overlay" aria-hidden="true"></div>
 
-  <!-- PAGE HERO -->
-  <div class="packages-page-hero">
-    <span class="hero-tag">✦ All Packages ✦</span>
-    <h1>Our Sweet Collections</h1>
-    <p>Handcrafted with love — choose the perfect package for every occasion</p>
+  <div class="tarts-hero">
+    <span class="hero-tag">✦ Choose Your Tart ✦</span>
+    <h1>Tart Box</h1>
+    <p>Elegant, buttery, and beautifully topped — pick the tart that delights you most</p>
   </div>
 
-  <!-- ALL PACKAGES -->
-  <section class="packages-section" id="packages" style="background: var(--secondary);">
+  <section class="packages-section" id="flavors" style="background: var(--secondary);">
     <div class="container">
-
-      <!-- ── Section: Our Signature ── -->
-      <h2 class="section-title fade-in">Signature Packages</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Our best-loved everyday creations</p>
-      <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
-
-      <div class="packages-grid" style="margin-bottom: 80px;">
-
-        <article class="package-card fade-in" data-delay="1">
-          <div class="card-image">
-            <img src="images/tart%20mshakel.jpg" alt="Tart Box" loading="lazy" />
-            <span class="card-badge">Popular</span>
-          </div>
-          <div class="card-body">
-            <h3>Tart Box</h3>
-            <p>Elegant, buttery tarts with beautiful toppings — crafted fresh and presented in a gorgeous gift box.</p>
-            <div class="card-footer-row">
-              <span class="card-price">800₺</span>
-              <a href="tarts.html#flavors" class="btn btn-outline">Discover More</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="package-card fade-in" data-delay="2">
-          <div class="card-image">
-            <img src="images/cup3.jpg" alt="Cupcake Set" loading="lazy" />
-          </div>
-          <div class="card-body">
-            <h3>Cupcake Set</h3>
-            <p>A beautiful assortment of fluffy, frosted cupcakes — perfect for parties, gifts, or a sweet treat.</p>
-            <div class="card-footer-row">
-              <span class="card-price">300₺</span>
-              <a href="cupcakes.html#flavors" class="btn btn-outline">Discover More</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="package-card fade-in" data-delay="3">
-          <div class="card-image">
-            <img src="images/biscuit%201.jpg" alt="Biscuit Box" loading="lazy" />
-          </div>
-          <div class="card-body">
-            <h3>Biscuit Box</h3>
-            <p>A charming gift box filled with our signature handcrafted biscuits in various flavors and designs.</p>
-            <div class="card-footer-row">
-              <span class="card-price">800₺</span>
-              <a href="biscuits.html#flavors" class="btn btn-outline">Discover More</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- ── Section: Occasion Packages ── -->
-      <h2 class="section-title fade-in">Occasion Packages</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Curated collections for life's most memorable moments</p>
+      <h2 class="section-title fade-in">Our Tart Varieties</h2>
+      <p class="section-subtitle fade-in" data-delay="1">Five stunning creations — each a masterpiece of pastry artistry</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
 
       <div class="packages-grid">
 
-        <!-- Birthday Package -->
         <article class="package-card fade-in" data-delay="1">
           <div class="card-image">
-            <img src="images/tart%20mshakel.jpg" alt="Birthday Package" loading="lazy" />
-            <span class="card-badge birthday">🎂 Birthday</span>
+            <img src="images/tart%201.jpg" alt="Fresh Fruit Tart" loading="lazy" />
+            <span class="card-badge fruit">🍓 Fresh Fruit</span>
           </div>
           <div class="card-body">
-            <h3>Birthday Package</h3>
-            <p>Everything to make a birthday magical — a layered cake, matching cupcakes, and decorated biscuits all in one stunning set.</p>
+            <h3>Fresh Fruit Tart</h3>
+            <p>Crisp golden pastry shell filled with silky vanilla cream and crowned with a colorful arrangement of seasonal fresh fruits and a glossy glaze.</p>
             <div class="card-footer-row">
-              <span class="card-price">750₺</span>
-              <a href="birthday-package.html#detail" class="btn btn-outline">Discover More</a>
+              <span class="card-price">800₺</span>
+              <a href="tart-fruit.html#detail" class="btn btn-outline">Order Now</a>
             </div>
           </div>
         </article>
 
-        <!-- Joy Package -->
         <article class="package-card fade-in" data-delay="2">
           <div class="card-image">
-            <img src="images/biscuit%203.jpg" alt="Joy Package" loading="lazy" />
-            <span class="card-badge joy">✨ Celebration</span>
+            <img src="images/tart%202.jpg" alt="Chocolate Ganache Tart" loading="lazy" />
+            <span class="card-badge choc-tart">🍫 Chocolate</span>
           </div>
           <div class="card-body">
-            <h3>Joy Package</h3>
-            <p>For weddings, engagements, and every joyful celebration — a luxurious dessert spread that turns your happiest day into the sweetest memory.</p>
+            <h3>Chocolate Ganache Tart</h3>
+            <p>A crisp pastry shell filled to the brim with velvety dark chocolate ganache, finished with a dusting of premium cocoa and delicate chocolate curls.</p>
             <div class="card-footer-row">
-              <span class="card-price">1100₺</span>
-              <a href="joy-package.html#detail" class="btn btn-outline">Discover More</a>
+              <span class="card-price">800₺</span>
+              <a href="tart-chocolate.html#detail" class="btn btn-outline">Order Now</a>
             </div>
           </div>
         </article>
 
-        <!-- Guests Package -->
         <article class="package-card fade-in" data-delay="3">
           <div class="card-image">
-            <img src="images/biscuit%209.jpg" alt="Guests Package" loading="lazy" />
-            <span class="card-badge guests">🫖 Hosting</span>
+            <img src="images/tart%203.jpg" alt="Lemon Cream Tart" loading="lazy" />
+            <span class="card-badge lemon">🍋 Lemon Cream</span>
           </div>
           <div class="card-body">
-            <h3>Guests Package</h3>
-            <p>Impress every guest with an elegant assorted sweets platter — mini tarts, biscuits, and cupcakes beautifully arranged and ready to serve.</p>
+            <h3>Lemon Cream Tart</h3>
+            <p>A golden pastry shell holding a beautifully smooth, tangy lemon curd cream — bright, refreshing and perfectly balanced between sweet and citrus.</p>
             <div class="card-footer-row">
-              <span class="card-price">550₺</span>
-              <a href="guests-package.html#detail" class="btn btn-outline">Discover More</a>
+              <span class="card-price">800₺</span>
+              <a href="tart-lemon.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="1">
+          <div class="card-image">
+            <img src="images/tart%204.jpg" alt="Mixed Berry Tart" loading="lazy" />
+            <span class="card-badge berry">🫐 Mixed Berry</span>
+          </div>
+          <div class="card-body">
+            <h3>Mixed Berry Tart</h3>
+            <p>A gorgeous pastry shell layered with cream and topped with a vibrant medley of fresh blueberries, raspberries, and strawberries — a feast for the senses.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="tart-berry.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="2">
+          <div class="card-image">
+            <img src="images/tart%205.jpg" alt="Caramel Pecan Tart" loading="lazy" />
+            <span class="card-badge caramel">🍮 Caramel Pecan</span>
+          </div>
+          <div class="card-body">
+            <h3>Caramel Pecan Tart</h3>
+            <p>A buttery pastry shell filled with silky salted caramel cream and crowned with beautifully arranged candied pecans — indulgent, elegant and irresistible.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="tart-caramel.html#detail" class="btn btn-outline">Order Now</a>
             </div>
           </div>
         </article>
@@ -191,24 +140,18 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="contact-section">
     <div class="container">
-      <h2 class="section-title fade-in">Can't Decide?</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Message us and we'll help you choose the perfect package</p>
+      <h2 class="section-title fade-in">Can't Choose?</h2>
+      <p class="section-subtitle fade-in" data-delay="1">Get a mixed box with your favorite tart varieties — message us to arrange!</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
       <div class="contact-actions fade-in" data-delay="2">
-        <a href="#"
-           class="btn btn-gold"
-           data-wa-message="Hello! 🍰 I'd like help choosing a package from House of Sweets. Can you guide me?">
-          💬 Ask Us on WhatsApp
-        </a>
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+        <a href="#" class="btn btn-gold" data-wa-message="Hello! 🍰 I'd like a mixed Tart Box with multiple varieties. Can you help me?">💬 Order a Mixed Box</a>
+        <a href="index.html#packages" class="btn btn-secondary">← Back to Packages</a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-logo">House of <span class="logo-accent">Sweets</span></div>
@@ -221,11 +164,11 @@
         </a>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
-        <a href="index.html">Home</a>
+        <a href="index.html#home">Home</a>
         <a href="packages.html#packages">Packages</a>
-        <a href="index.html#reviews">Reviews</a>
+        <a href="reviews.html#reviews">Reviews</a>
         <a href="reviews.html">All Reviews</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="contact.html#contact">Contact</a>
       </nav>
       <p class="footer-text">© 2024 House of Sweets &nbsp;·&nbsp; Crafted with love ♥</p>
     </div>
@@ -234,7 +177,6 @@
   <button class="scroll-top" aria-label="Scroll to top">
     <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
-
   <script src="script.js"></script>
 </body>
 </html>

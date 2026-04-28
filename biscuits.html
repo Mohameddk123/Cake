@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biscuit Box – House of Sweets</title>
+  <meta name="description" content="Choose your perfect biscuit — 12 handcrafted varieties including Classic Butter, Chocolate Dipped, Pistachio Rosewater, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .biscuits-hero {
+      background:
+        radial-gradient(ellipse at 65% 40%, rgba(212,175,55,0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 25% 70%, rgba(248,200,220,0.2) 0%, transparent 45%),
+        linear-gradient(145deg, #1a0a06 0%, #3d1a0a 30%, #6a3a10 60%, #4B2E2E 100%);
+      padding: 140px 24px 80px;
+      text-align: center;
+    }
+    .biscuits-hero h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,5vw,3.5rem); color:var(--white); margin-bottom:16px; }
+    .biscuits-hero p { color:rgba(255,255,255,0.75); font-size:1.05rem; max-width:500px; margin:0 auto; }
+    .biscuits-hero .hero-tag { opacity:1; animation:none; display:inline-block; margin-bottom:20px; }
+    .card-badge.butter         { background: #c8860a; }
+    .card-badge.choc-dip       { background: #5c3317; }
+    .card-badge.iced           { background: #e05c8a; }
+    .card-badge.cinnamon       { background: #8c3a10; }
+    .card-badge.vanilla-almond { background: #c8a96e; color: #2c1a1a; }
+    .card-badge.pistachio      { background: #4a7c59; }
+    .card-badge.double-choc    { background: #3a1a0a; }
+    .card-badge.cardamom       { background: #8c6a2a; }
+    .card-badge.caramel-pecan  { background: #b07030; }
+    .card-badge.lemon-biscuit  { background: #c8b020; color: #2c1a1a; }
+    .card-badge.coconut        { background: #7a5c3a; }
+    .card-badge.hazelnut       { background: #8c3a10; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">House of <span class="logo-accent">Sweets</span></a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="packages.html#packages">Packages</a></li>
+        <li><a href="reviews.html#reviews">Reviews</a></li>
+        <li><a href="contact.html#contact">Contact</a></li>
+        <li><a href="#" class="btn-nav" data-wa-message="Hello! 🍪 I'd like to order a Biscuit Box from House of Sweets. Can you help me?">Order Now</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <div class="biscuits-hero">
+    <span class="hero-tag">✦ Choose Your Biscuit ✦</span>
+    <h1>Biscuit Box</h1>
+    <p>Warm, crispy, and baked to perfection — pick the biscuit that calls your name</p>
+  </div>
+
+  <section class="packages-section" id="flavors" style="background: var(--secondary);">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Biscuit Varieties</h2>
+      <p class="section-subtitle fade-in" data-delay="1">Twelve delightful creations — each one handcrafted from scratch with premium ingredients</p>
+      <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
+
+      <div class="packages-grid">
+
+        <article class="package-card fade-in" data-delay="1">
+          <div class="card-image">
+            <img src="images/biscuit%201.jpg" alt="Classic Butter Biscuits" loading="lazy" />
+            <span class="card-badge butter">🧈 Classic Butter</span>
+          </div>
+          <div class="card-body">
+            <h3>Classic Butter Biscuits</h3>
+            <p>Our signature golden butter biscuits made with premium European butter and a touch of pure vanilla — a melt-in-your-mouth experience that is simply timeless.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-butter.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="2">
+          <div class="card-image">
+            <img src="images/biscuit%202.jpg" alt="Chocolate Dipped Biscuits" loading="lazy" />
+            <span class="card-badge choc-dip">🍫 Choc Dipped</span>
+          </div>
+          <div class="card-body">
+            <h3>Chocolate Dipped Biscuits</h3>
+            <p>Crispy, buttery biscuits half-dipped in premium Belgian chocolate — a perfect balance of crunch, richness and sweetness in every single bite.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-chocolate.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="3">
+          <div class="card-image">
+            <img src="images/biscuit%203.jpg" alt="Iced Design Biscuits" loading="lazy" />
+            <span class="card-badge iced">🎨 Iced Design</span>
+          </div>
+          <div class="card-body">
+            <h3>Iced Design Biscuits</h3>
+            <p>Intricately hand-decorated royal iced biscuits in your choice of theme, color, and design — the most personal and beautiful edible gift you can give.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-iced.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="1">
+          <div class="card-image">
+            <img src="images/biscuit%204.jpg" alt="Cinnamon Spice Biscuits" loading="lazy" />
+            <span class="card-badge cinnamon">🌿 Cinnamon Spice</span>
+          </div>
+          <div class="card-body">
+            <h3>Cinnamon Spice Biscuits</h3>
+            <p>Warmly spiced biscuits infused with cinnamon, cardamom and brown sugar for a deeply comforting, aromatic treat — reminiscent of the finest artisan baking.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-cinnamon.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="2">
+          <div class="card-image">
+            <img src="images/biscuit%205.jpg" alt="Vanilla Almond Shortbread" loading="lazy" />
+            <span class="card-badge vanilla-almond">🌸 Vanilla Almond</span>
+          </div>
+          <div class="card-body">
+            <h3>Vanilla Almond Shortbread</h3>
+            <p>Delicate shortbread infused with pure vanilla and topped with slivered almonds — buttery, crumbly and utterly elegant in every bite.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-vanilla-almond.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="3">
+          <div class="card-image">
+            <img src="images/biscuit%206.jpg" alt="Pistachio Rosewater Biscuits" loading="lazy" />
+            <span class="card-badge pistachio">🌹 Pistachio Rose</span>
+          </div>
+          <div class="card-body">
+            <h3>Pistachio Rosewater Biscuits</h3>
+            <p>A fragrant Middle Eastern-inspired biscuit with crushed pistachios and a delicate rosewater glaze — exotic, aromatic and truly unforgettable.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-pistachio.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="1">
+          <div class="card-image">
+            <img src="images/biscuit%207.jpg" alt="Double Chocolate Biscuits" loading="lazy" />
+            <span class="card-badge double-choc">🍫 Double Choc</span>
+          </div>
+          <div class="card-body">
+            <h3>Double Chocolate Biscuits</h3>
+            <p>Rich cocoa biscuits loaded with dark and milk chocolate chunks — the ultimate chocolate lovers treat, deeply indulgent in every bite.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-double-choc.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="2">
+          <div class="card-image">
+            <img src="images/biscuit%208.jpg" alt="Cardamom and Honey Biscuits" loading="lazy" />
+            <span class="card-badge cardamom">🍯 Cardamom Honey</span>
+          </div>
+          <div class="card-body">
+            <h3>Cardamom &amp; Honey Biscuits</h3>
+            <p>Warmly spiced biscuits glazed with pure honey and infused with aromatic cardamom — a comforting, fragrant treat inspired by traditional flavors.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-cardamom.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="3">
+          <div class="card-image">
+            <img src="images/biscuit%209.jpg" alt="Caramel Pecan Biscuits" loading="lazy" />
+            <span class="card-badge caramel-pecan">🍮 Caramel Pecan</span>
+          </div>
+          <div class="card-body">
+            <h3>Caramel Pecan Biscuits</h3>
+            <p>Buttery biscuits topped with a luscious salted caramel drizzle and crunchy toasted pecans — a perfect balance of sweet, salty and nutty.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-caramel-pecan.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="1">
+          <div class="card-image">
+            <img src="images/biscuit%2010.jpg" alt="Lemon Zest Biscuits" loading="lazy" />
+            <span class="card-badge lemon-biscuit">🍋 Lemon Zest</span>
+          </div>
+          <div class="card-body">
+            <h3>Lemon Zest Biscuits</h3>
+            <p>Bright, zesty biscuits bursting with fresh lemon flavor, finished with a light lemon glaze — refreshing, light and perfect for any occasion.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-lemon.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="2">
+          <div class="card-image">
+            <img src="images/biscuit%2011.jpg" alt="Coconut Bliss Biscuits" loading="lazy" />
+            <span class="card-badge coconut">🥥 Coconut Bliss</span>
+          </div>
+          <div class="card-body">
+            <h3>Coconut Bliss Biscuits</h3>
+            <p>Light and crispy biscuits packed with toasted coconut flakes and a hint of vanilla — tropical, fragrant and irresistibly delicious.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-coconut.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="package-card fade-in" data-delay="3">
+          <div class="card-image">
+            <img src="images/biscuit%2012.jpg" alt="Brown Butter Hazelnut Biscuits" loading="lazy" />
+            <span class="card-badge hazelnut">🌰 Hazelnut</span>
+          </div>
+          <div class="card-body">
+            <h3>Brown Butter Hazelnut Biscuits</h3>
+            <p>Nutty, golden brown butter biscuits studded with roasted hazelnuts and a dusting of fine sea salt — rich, sophisticated and deeply satisfying.</p>
+            <div class="card-footer-row">
+              <span class="card-price">800₺</span>
+              <a href="biscuit-hazelnut.html#detail" class="btn btn-outline">Order Now</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Can't Choose?</h2>
+      <p class="section-subtitle fade-in" data-delay="1">Get a mixed box with your favorite biscuit varieties — message us to arrange!</p>
+      <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
+      <div class="contact-actions fade-in" data-delay="2">
+        <a href="#" class="btn btn-gold" data-wa-message="Hello! 🍪 I'd like a mixed Biscuit Box with all four varieties. Can you help me?">💬 Order a Mixed Box</a>
+        <a href="index.html#packages" class="btn btn-secondary">← Back to Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">House of <span class="logo-accent">Sweets</span></div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/house_of_sweets_0202/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/905388871072" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html#home">Home</a>
+        <a href="packages.html#packages">Packages</a>
+        <a href="reviews.html#reviews">Reviews</a>
+        <a href="reviews.html">All Reviews</a>
+        <a href="contact.html#contact">Contact</a>
+      </nav>
+      <p class="footer-text">© 2024 House of Sweets &nbsp;·&nbsp; Crafted with love ♥</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
