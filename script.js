@@ -148,6 +148,7 @@ if (galleryMoreBtn) {
   });
 }
 
+
 // ── COUNTER ANIMATION ────────────────────────────────────────
 const counterEls = document.querySelectorAll('.stat-number');
 if (counterEls.length > 0) {
@@ -171,7 +172,6 @@ if (counterEls.length > 0) {
   }, { threshold: 0.6 });
   counterEls.forEach(el => counterObserver.observe(el));
 }
-
 
 // ── WHATSAPP – Order Form ────────────────────────────────────
 const orderForm = document.getElementById('orderForm');

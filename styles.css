@@ -22,8 +22,8 @@
 }
 
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body { font-family:'Poppins',sans-serif; background:var(--secondary); color:var(--text-dark); overflow-x:hidden; line-height:1.6; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+body { font-family:'Poppins',sans-serif; background:var(--secondary); color:var(--text-dark); overflow-x:hidden; line-height:1.6; max-width: 100%; }
 img { max-width:100%; height:auto; display:block; }
 a { text-decoration:none; color:inherit; }
 ul { list-style:none; }
@@ -558,6 +558,36 @@ section { padding: 100px 24px; scroll-margin-top: 80px; }
 [data-delay="4"] { transition-delay: 0.4s; }
 [data-delay="5"] { transition-delay: 0.5s; }
 
+/* ── Stats Counter ── */
+.stats-section { background: var(--accent); padding: 64px 24px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+.stat-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.stat-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
+}
+
 /* ── Package Detail Pages ── */
 .page-hero {
   padding-top: 72px;
@@ -838,37 +868,4 @@ section { padding: 100px 24px; scroll-margin-top: 80px; }
   .nav-container { padding: 0 16px; }
   .hero-title { font-size: 2.6rem; }
   .order-form-container { padding: 28px 16px; }
-}
-
-/* ── Stats Counter ── */
-.stats-section {
-  background: var(--accent);
-  padding: 64px 24px;
-}
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  max-width: 860px;
-  margin: 0 auto;
-  text-align: center;
-}
-.stat-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
-.stat-number {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.6rem, 5vw, 4rem);
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
-  letter-spacing: -1px;
-}
-.stat-label {
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.7);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-@media (max-width: 600px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
 }
