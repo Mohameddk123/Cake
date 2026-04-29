@@ -27,13 +27,14 @@
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="packages.html#packages">Packages</a></li>
-        <li><a href="reviews.html#reviews">Reviews</a></li>
-        <li><a href="contact.html#contact">Contact</a></li>
+        <li><a href="index.html#home" data-i18n="nav-home">Home</a></li>
+        <li><a href="packages.html#packages" data-i18n="nav-packages">Packages</a></li>
+        <li><a href="reviews.html#reviews" data-i18n="nav-reviews">Reviews</a></li>
+        <li><a href="contact.html#contact" data-i18n="nav-contact">Contact</a></li>
         <li>
           <a href="#"
              class="btn-nav"
+             data-i18n="nav-order"
              data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?">
             Order Now
           </a>
@@ -47,47 +48,48 @@
   <section class="hero" id="home" aria-label="Welcome to House of Sweets">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <span class="hero-tag">✦ Handcrafted with Love ✦</span>
+      <span class="hero-tag" data-i18n="hero-tag">✦ Handcrafted with Love ✦</span>
       <h1 class="hero-title">
-        House of<br /><span class="title-accent">Sweets</span>
+        <span data-i18n="hero-title-line1">House of</span><br /><span class="title-accent" data-i18n="hero-title-accent">Sweets</span>
       </h1>
-      <p class="hero-subtitle">Delicious moments made with love</p>
+      <p class="hero-subtitle" data-i18n="hero-subtitle">Delicious moments made with love</p>
       <div class="hero-actions">
         <a href="#"
            class="btn btn-primary"
+           data-i18n="hero-cta-order"
            data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?">
           🛒 Order Now
         </a>
-        <a href="#packages" class="btn btn-secondary">View Packages</a>
+        <a href="#packages" class="btn btn-secondary" data-i18n="hero-cta-packages">View Packages</a>
       </div>
     </div>
     <a href="#about" class="hero-scroll" aria-label="Scroll down">
       <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      <span>scroll</span>
+      <span data-i18n="hero-scroll">scroll</span>
     </a>
   </section>
 
   <!-- ══════════════════ WHY US ══════════════════ -->
   <section class="about-section" id="about">
     <div class="container">
-      <h2 class="section-title fade-in">Why Choose Us?</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Every sweet is crafted with premium ingredients and a whole lot of love.</p>
+      <h2 class="section-title fade-in" data-i18n="about-title">Why Choose Us?</h2>
+      <p class="section-subtitle fade-in" data-delay="1" data-i18n="about-subtitle">Every sweet is crafted with premium ingredients and a whole lot of love.</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
       <div class="about-grid">
         <div class="about-item fade-in" data-delay="1">
           <div class="about-icon">🎂</div>
-          <h3>Custom Creations</h3>
-          <p>Every order is made to order, tailored perfectly to your dream dessert vision.</p>
+          <h3 data-i18n="about-1-title">Custom Creations</h3>
+          <p data-i18n="about-1-text">Every order is made to order, tailored perfectly to your dream dessert vision.</p>
         </div>
         <div class="about-item fade-in" data-delay="2">
           <div class="about-icon">🌿</div>
-          <h3>Premium Ingredients</h3>
-          <p>We use only the finest, freshest ingredients for an unbeatable taste experience.</p>
+          <h3 data-i18n="about-2-title">Premium Ingredients</h3>
+          <p data-i18n="about-2-text">We use only the finest, freshest ingredients for an unbeatable taste experience.</p>
         </div>
         <div class="about-item fade-in" data-delay="3">
           <div class="about-icon">💝</div>
-          <h3>Made with Love</h3>
-          <p>Each creation is baked with passion, care, and true artisan expertise.</p>
+          <h3 data-i18n="about-3-title">Made with Love</h3>
+          <p data-i18n="about-3-text">Each creation is baked with passion, care, and true artisan expertise.</p>
         </div>
       </div>
     </div>
@@ -99,19 +101,19 @@
       <div class="stats-grid">
         <div class="stat-item fade-in" data-delay="1">
           <div class="stat-number" data-target="500" data-suffix="+">0+</div>
-          <div class="stat-label">Happy Orders</div>
+          <div class="stat-label" data-i18n="stat-1-label">Happy Orders</div>
         </div>
         <div class="stat-item fade-in" data-delay="2">
           <div class="stat-number" data-target="4" data-suffix="">0</div>
-          <div class="stat-label">Years of Craft</div>
+          <div class="stat-label" data-i18n="stat-2-label">Years of Craft</div>
         </div>
         <div class="stat-item fade-in" data-delay="3">
           <div class="stat-number" data-target="20" data-suffix="+">0+</div>
-          <div class="stat-label">Unique Flavors</div>
+          <div class="stat-label" data-i18n="stat-3-label">Unique Flavors</div>
         </div>
         <div class="stat-item fade-in" data-delay="4">
           <div class="stat-number" data-target="100" data-suffix="%">0%</div>
-          <div class="stat-label">Handcrafted</div>
+          <div class="stat-label" data-i18n="stat-4-label">Handcrafted</div>
         </div>
       </div>
     </div>
@@ -120,8 +122,8 @@
   <!-- ══════════════════ PACKAGES ══════════════════ -->
   <section class="packages-section" id="packages">
     <div class="container">
-      <h2 class="section-title fade-in">Our Packages</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Indulge in our carefully curated dessert collections</p>
+      <h2 class="section-title fade-in" data-i18n="pkg-title">Our Packages</h2>
+      <p class="section-subtitle fade-in" data-delay="1" data-i18n="pkg-subtitle">Indulge in our carefully curated dessert collections</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
 
       <div class="packages-grid">
@@ -132,11 +134,11 @@
             <span class="card-badge">Popular</span>
           </div>
           <div class="card-body">
-            <h3>Tart Box</h3>
-            <p>Elegant, buttery tarts with beautiful toppings — crafted fresh and presented in a gorgeous gift box.</p>
+            <h3 data-i18n="pkg-tart-title">Tart Box</h3>
+            <p data-i18n="pkg-tart-desc">Elegant, buttery tarts with beautiful toppings — crafted fresh and presented in a gorgeous gift box.</p>
             <div class="card-footer-row">
               <span class="card-price">800₺</span>
-              <a href="tarts.html#flavors" class="btn btn-outline">Discover More</a>
+              <a href="tarts.html#flavors" class="btn btn-outline" data-i18n="pkg-discover">Discover More</a>
             </div>
           </div>
         </article>
@@ -146,11 +148,11 @@
             <img src="images/cup3.jpg" alt="Cupcake Set" loading="lazy" />
           </div>
           <div class="card-body">
-            <h3>Cupcake Set</h3>
-            <p>A beautiful assortment of fluffy, frosted cupcakes — perfect for parties, gifts, or a sweet treat.</p>
+            <h3 data-i18n="pkg-cup-title">Cupcake Set</h3>
+            <p data-i18n="pkg-cup-desc">A beautiful assortment of fluffy, frosted cupcakes — perfect for parties, gifts, or a sweet treat.</p>
             <div class="card-footer-row">
               <span class="card-price">300₺</span>
-              <a href="cupcakes.html#flavors" class="btn btn-outline">Discover More</a>
+              <a href="cupcakes.html#flavors" class="btn btn-outline" data-i18n="pkg-discover">Discover More</a>
             </div>
           </div>
         </article>
@@ -160,11 +162,11 @@
             <img src="images/biscuit%201.jpg" alt="Biscuit Box" loading="lazy" />
           </div>
           <div class="card-body">
-            <h3>Biscuit Box</h3>
-            <p>A charming gift box filled with our signature handcrafted biscuits in various flavors and designs.</p>
+            <h3 data-i18n="pkg-bis-title">Biscuit Box</h3>
+            <p data-i18n="pkg-bis-desc">A charming gift box filled with our signature handcrafted biscuits in various flavors and designs.</p>
             <div class="card-footer-row">
               <span class="card-price">800₺</span>
-              <a href="biscuits.html#flavors" class="btn btn-outline">Discover More</a>
+              <a href="biscuits.html#flavors" class="btn btn-outline" data-i18n="pkg-discover">Discover More</a>
             </div>
           </div>
         </article>
@@ -172,7 +174,7 @@
       </div>
 
       <div class="reviews-cta fade-in" style="margin-top: 52px;">
-        <a href="packages.html#packages" class="btn btn-gold">✦ Discover More Packages</a>
+        <a href="packages.html#packages" class="btn btn-gold" data-i18n="pkg-discover-all">✦ Discover More Packages</a>
       </div>
     </div>
   </section>
@@ -180,8 +182,8 @@
   <!-- ══════════════════ GALLERY ══════════════════ -->
   <section class="gallery-section" id="gallery">
     <div class="container">
-      <h2 class="section-title fade-in">Our Creations</h2>
-      <p class="section-subtitle fade-in" data-delay="1">A glimpse of the sweetness we make every day</p>
+      <h2 class="section-title fade-in" data-i18n="gal-title">Our Creations</h2>
+      <p class="section-subtitle fade-in" data-delay="1" data-i18n="gal-subtitle">A glimpse of the sweetness we make every day</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
 
       <div class="gallery-grid">
@@ -277,13 +279,14 @@
       </div>
 
       <div class="reviews-cta fade-in" style="margin-top:36px;" id="galleryMoreWrap">
-        <button class="btn btn-gold" id="galleryMoreBtn">✦ See More</button>
+        <button class="btn btn-gold" id="galleryMoreBtn" data-i18n="gal-see-more">✦ See More</button>
       </div>
       <div class="reviews-cta fade-in" style="margin-top:20px;">
         <a href="#"
            class="btn btn-outline"
            style="color:var(--white); border-color:rgba(255,255,255,0.4);"
-           data-wa-message="Hello! 🍰 I saw your gallery and would love to order. Can you help me?">
+           data-wa-message="Hello! 🍰 I saw your gallery and would love to order. Can you help me?"
+           data-i18n="gal-order-like">
           💬 Order Something Like This
         </a>
       </div>
@@ -293,8 +296,8 @@
   <!-- ══════════════════ REVIEWS ══════════════════ -->
   <section class="reviews-section" id="reviews">
     <div class="container">
-      <h2 class="section-title fade-in">What Our Customers Say</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Sweet words from our sweet community</p>
+      <h2 class="section-title fade-in" data-i18n="rev-title">What Our Customers Say</h2>
+      <p class="section-subtitle fade-in" data-delay="1" data-i18n="rev-subtitle">Sweet words from our sweet community</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
 
       <div class="reviews-grid">
@@ -325,7 +328,7 @@
       </div>
 
       <div class="reviews-cta fade-in" data-delay="2">
-        <a href="reviews.html" class="btn btn-outline">See More Reviews ✦</a>
+        <a href="reviews.html" class="btn btn-outline" data-i18n="rev-see-more">See More Reviews ✦</a>
       </div>
     </div>
   </section>
@@ -333,15 +336,15 @@
   <!-- ══════════════════ FAQ ══════════════════ -->
   <section class="faq-section" id="faq">
     <div class="container">
-      <h2 class="section-title fade-in">Frequently Asked Questions</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Everything you need to know before ordering</p>
+      <h2 class="section-title fade-in" data-i18n="faq-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle fade-in" data-delay="1" data-i18n="faq-subtitle">Everything you need to know before ordering</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
 
       <div class="faq-list fade-in" data-delay="1">
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>How do I place an order?</span>
+            <span data-i18n="faq-q1">How do I place an order?</span>
             <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
@@ -351,7 +354,7 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>How far in advance should I order?</span>
+            <span data-i18n="faq-q2">How far in advance should I order?</span>
             <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
@@ -361,7 +364,7 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>Can I customize the design and flavors?</span>
+            <span data-i18n="faq-q3">Can I customize the design and flavors?</span>
             <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
@@ -371,7 +374,7 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>Do you offer delivery?</span>
+            <span data-i18n="faq-q4">Do you offer delivery?</span>
             <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
@@ -381,7 +384,7 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>What payment methods do you accept?</span>
+            <span data-i18n="faq-q5">What payment methods do you accept?</span>
             <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
@@ -391,7 +394,7 @@
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>Do you cater for allergies or dietary requirements?</span>
+            <span data-i18n="faq-q6">Do you cater for allergies or dietary requirements?</span>
             <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="faq-answer">
@@ -406,16 +409,17 @@
   <!-- ══════════════════ CONTACT ══════════════════ -->
   <section class="contact-section" id="contact">
     <div class="container">
-      <h2 class="section-title fade-in">Ready to Order?</h2>
-      <p class="section-subtitle fade-in" data-delay="1">Reach out and let's create something sweet together</p>
+      <h2 class="section-title fade-in" data-i18n="cta-title">Ready to Order?</h2>
+      <p class="section-subtitle fade-in" data-delay="1" data-i18n="cta-subtitle">Reach out and let's create something sweet together</p>
       <div class="section-divider fade-in" data-delay="1"><span>✦</span></div>
       <div class="contact-actions fade-in" data-delay="2">
         <a href="#"
            class="btn btn-gold"
-           data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?">
+           data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?"
+           data-i18n="cta-wa">
           💬 WhatsApp Us
         </a>
-        <a href="https://www.instagram.com/house_of_sweets_0202/" target="_blank" rel="noopener" class="btn btn-secondary">
+        <a href="https://www.instagram.com/house_of_sweets_0202/" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="cta-ig">
           📸 Follow on Instagram
         </a>
       </div>
@@ -435,20 +439,18 @@
         </a>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
-        <a href="#home">Home</a>
-        <a href="#packages">Packages</a>
-        <a href="#reviews">Reviews</a>
-        <a href="reviews.html">All Reviews</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" data-i18n="footer-home">Home</a>
+        <a href="#packages" data-i18n="footer-packages">Packages</a>
+        <a href="#reviews" data-i18n="footer-reviews">Reviews</a>
+        <a href="reviews.html" data-i18n="footer-all-reviews">All Reviews</a>
+        <a href="#contact" data-i18n="footer-contact">Contact</a>
       </nav>
-      <p class="footer-text">© 2024 House of Sweets &nbsp;·&nbsp; Crafted with love ♥</p>
+      <p class="footer-text" data-i18n="footer-copy">© 2024 House of Sweets &nbsp;·&nbsp; Crafted with love ♥</p>
     </div>
   </footer>
 
   <button class="scroll-top" aria-label="Scroll to top">
     <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-  <script src="script.js"></script>
+  </button>  <script src="script.js"></script>
 </body>
 </html>

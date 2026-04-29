@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -64,15 +64,12 @@
         <span class="bar"></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="packages.html#packages">Packages</a></li>
-        <li><a href="reviews.html#reviews">Reviews</a></li>
-        <li><a href="contact.html#contact">Contact</a></li>
+        <li><a href="index.html#home" data-i18n="nav-home">Home</a></li>
+        <li><a href="packages.html#packages" data-i18n="nav-packages">Packages</a></li>
+        <li><a href="reviews.html#reviews" data-i18n="nav-reviews">Reviews</a></li>
+        <li><a href="contact.html#contact" data-i18n="nav-contact">Contact</a></li>
         <li>
-          <a href="#" class="btn-nav"
-             data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?">
-            Order Now
-          </a>
+          <a href="#" class="btn-nav" data-i18n="nav-order" data-wa-message="Hello! 🍰 I'd like to place an order with House of Sweets. Can you help me?">Order Now</a>
         </li>
       </ul>
     </div>
@@ -214,18 +211,16 @@
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="index.html">Home</a>
-        <a href="packages.html#packages">Packages</a>
-        <a href="reviews.html#reviews">Reviews</a>
-        <a href="contact.html#contact">Contact</a>
+        <a href="packages.html#packages" data-i18n="footer-packages">Packages</a>
+        <a href="reviews.html#reviews" data-i18n="footer-reviews">Reviews</a>
+        <a href="contact.html#contact" data-i18n="footer-contact">Contact</a>
       </nav>
-      <p class="footer-text">© 2024 House of Sweets &nbsp;·&nbsp; Crafted with love ♥</p>
+      <p class="footer-text"><span data-i18n="footer-copy">© 2024 House of Sweets &nbsp;·&nbsp; Crafted with love ♥</span></p>
     </div>
   </footer>
 
   <button class="scroll-top" aria-label="Scroll to top">
     <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-  <script src="script.js"></script>
+  </button>  <script src="script.js"></script>
 </body>
 </html>
