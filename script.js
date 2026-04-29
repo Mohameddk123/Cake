@@ -190,22 +190,12 @@ if (orderForm) {
       return;
     }
 
-    // Auto-detect product image from the detail page
-    const productImg = document.querySelector('.package-detail-image img');
-    let imageUrl = null;
-    if (productImg) {
-      try {
-        imageUrl = new URL(productImg.getAttribute('src'), window.location.href).href;
-      } catch (_) {}
-    }
-
     const lines = [
       `🍰 *New Order – House of Sweets*`,
       `📦 Package: ${packageName}`,
       `👤 Name: ${name}`,
       `📞 Phone: ${phone}`,
     ];
-    if (imageUrl) lines.push(`🖼️ Product Image: ${imageUrl}`);
     if (msg) lines.push(`💬 Message: ${msg}`);
 
     const waText = lines.join('\n');
