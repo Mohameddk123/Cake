@@ -144,14 +144,6 @@ h1,h2,h3,h4 { font-family:'Playfair Display',serif; line-height:1.2; }
   transition: color 0.4s ease;
 }
 .nav-logo .logo-accent { color: var(--gold); }
-.logo-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--primary);
-  flex-shrink: 0;
-}
 
 .nav-links {
   display: flex;
